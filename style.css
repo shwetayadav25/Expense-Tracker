@@ -1,0 +1,164 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px 15px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #6c45a5;
+    margin-bottom: 10px;
+}
+
+.container > p {
+    text-align: center;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.balance-box {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.balance-box h2 {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.summary {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.income, .expense {
+    flex: 1;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 12px;
+    background: #f5f0ff;
+}
+
+.income h3 {
+    color: green;
+}
+
+.expense h3 {
+    color: red;
+}
+
+.summary p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #444;
+    margin: 20px 0 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #764ba2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #59358a;
+}
+
+/* Transaction Cards */
+
+#transaction-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+#transaction-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    background: #f5f0ff;
+    border-left: 5px solid #764ba2;
+}
+
+#transaction-list li.income {
+    border-left-color: green;
+}
+
+#transaction-list li.expense {
+    border-left-color: red;
+}
+
+.transaction-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.transaction-info strong {
+    color: #333;
+}
+
+.transaction-info span {
+    font-weight: bold;
+}
+
+.income .transaction-info span {
+    color: green;
+}
+
+.expense .transaction-info span {
+    color: red;
+}
+
+.delete-btn {
+    width: auto;
+    padding: 8px 12px;
+    background: #e74c3c;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+```
